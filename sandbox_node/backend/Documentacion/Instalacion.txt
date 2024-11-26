@@ -1,0 +1,30 @@
+INSTALACION DE SANDBOX DE C/C+
+
+$ cd Tester/Languages/C_C++/Sandbox/libsandbox
+$ chmod +x configure
+$ ./configure
+$ sudo make install
+$ cd ../pysandbox
+$ python setup.py build
+$ sudo python setup.py install
+# Exportar la variable en .bashrc
+# LD_LIBRARY_PATH=/usr/local/lib
+
+EJECUTAR PRUEBAS DE C/C++
+$cd Tester/Languages/C_C++/Sandbox/Test
+$make runtests
+
+INSTALACION DE SANDBOX DE JAVA
+$cd Tester/Languages/JAVA/Sandbox
+$make
+
+EJECUTAR PRUEBAS DE JAVA
+$cd Tester/Languages/JAVA/Sandbox/Test
+$make runalltest
+# Si no se ejecutan las pruebas, verificar en la clase SandboxSecurityManager->RuntimePermission que printf pueda ejeuctarse.
+
+
+PROGRAMA PARA COMPILAR ARCHIVOS DE JAVA
+$cd Tester/Languajes/JAVA/Compiler
+$make
+
